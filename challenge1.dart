@@ -1,12 +1,10 @@
 void main() {
   String name = printName('yousef');
-  
-  
-  print(name);
-  printage(1979,2022);
-  printHello('es','yousef');
-  printMax(5, 20);
 
+  print(name);
+  printage(1979, 2022);
+  printHello('es', 'yousef');
+  printMax(5, 20);
 }
 
 /**
@@ -17,9 +15,6 @@ void main() {
 String printName(String name) {
   return 'Name:$name';
 }
- 
-
-
 
 /**
  * Task 2:
@@ -29,9 +24,10 @@ String printName(String name) {
  * - Age = current year - birth
  */
 
-void printage(int birthYear, int year){
-  print ("${ birthYear - year} years old")
+void printage(int birthYear, int year) {
+  print("${birthYear - year} years old");
 }
+
 /**
  * Task 3:
  * Create a function called `printHello`
@@ -42,16 +38,14 @@ void printage(int birthYear, int year){
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
-void printHello(String lang, String name){
-if (lang == 'en') {
+void printHello(String lang, String name) {
+  if (lang == 'en') {
     print("Hello $name");
-  }else if (lang == 'es') {
+  } else if (lang == 'es') {
     print("Hola $name");
-  }else if (lang == 'fr') {
+  } else if (lang == 'fr') {
     print("Bonjour $name");
   }
-
-
 }
 /**
  * Task 4:
@@ -60,14 +54,10 @@ if (lang == 'en') {
  * - and prints out the bigger number
  */
 
-void printMax(int x , int y){
- 
- if (x > y){
-  print (x);
- } else {
-  print (y);
- }
-
-
-
+void printMax(int x, int y) {
+  if (x > y) {
+    print(x);
+  } else {
+    print(y);
+  }
 }
