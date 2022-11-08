@@ -25,7 +25,7 @@ String printName(String name) {
  */
 
 void printage(int birthYear, int year) {
-  print("${birthYear - year} years old");
+  print("${year - birthYear} years old");
 }
 
 /**
